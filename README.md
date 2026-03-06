@@ -26,7 +26,7 @@ The app enables users to record videos of patients performing wrist tasks using 
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/DART-Lab-LLUI/IMU-Python-APP.git
+   git clone https://github.com/xinyaoict/IMU_Python_APP
 
 2. Open the project in Android Studio.
 3. Build the project and run it on your Android tablet.
