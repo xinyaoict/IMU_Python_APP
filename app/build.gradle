@@ -1,0 +1,124 @@
+plugins {
+    id 'com.android.application'
+    id 'com.chaquo.python'
+}
+
+android {
+    namespace 'com.llui.idrink'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.llui.idrink"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        File keystoreFile = project.rootProject.file("credentials.properties");
+        Properties properties = new Properties();
+
+        try (InputStream inputStream = new FileInputStream(keystoreFile)) {
+            properties.load(inputStream);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        String sftp_host = properties.getProperty("SFTP_HOST", "")
+        buildConfigField("String", "SFTP_HOST", sftp_host)
+
+        String sftp_port = properties.getProperty("SFTP_PORT", "")
+        buildConfigField("Integer", "SFTP_PORT", sftp_port)
+
+        String sftp_user = properties.getProperty("SFTP_USER", "")
+        buildConfigField("String", "SFTP_USER", sftp_user)
+
+        String sftp_pass = properties.getProperty("SFTP_PASS", "")
+        buildConfigField("String", "SFTP_PASS", sftp_pass)
+
+        String sftp_dir = properties.getProperty("SFTP_DIR", "")
+        buildConfigField("String", "SFTP_DIR", sftp_dir)
+
+        ndk {
+            abiFilters.add("arm64-v8a")
+        }
+    }
+
+    buildFeatures{
+        buildConfig = true
+        viewBinding = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+
+
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.20"
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation "androidx.work:work-runtime:2.7.1"
+    implementation "androidx.lifecycle:lifecycle-runtime:2.5.1"
+    implementation 'androidx.camera:camera-video:1.3.4'
+    implementation 'androidx.databinding:viewbinding:8.5.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    //QR Code
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
+    // CameraX core library using camera2 implementation
+    implementation 'androidx.camera:camera-video:1.3.4'
+    implementation "androidx.camera:camera-core:1.3.4"
+    implementation "androidx.camera:camera-camera2:1.3.4"
+    implementation "androidx.camera:camera-lifecycle:1.3.4"
+    implementation "androidx.camera:camera-view:1.3.4"
+    //JSON
+    implementation 'org.json:json:20210307'
+    // Movella SDK
+    implementation fileTree(dir: 'libs', include: ['*.aar'])
+    //SFTP
+    implementation 'com.github.mwiede:jsch:0.2.18'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    chaquopy {
+
+        defaultConfig {
+            version = "3.9"
+
+//            pyc {
+//                src = false
+//            }
+
+            pip{
+                options "--extra-index-url", "https://chaquo.com/pypi-extra/"
+                install("setuptools")
+                install("wheel")
+                install("PEP517")
+                install("numpy")
+                install("pandas")
+                install("scipy")
+                install("pywavelets")
+                install("socket.py")
+            }
+        }
+
+        sourceSets {
+            named("main") {
+                srcDir("src/main/python")
+            }
+        }
+    }
+}

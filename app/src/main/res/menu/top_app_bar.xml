@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/action_return_home"
+        android:title="Dashboard"
+        android:icon="@drawable/navigation_home_24"
+        app:showAsAction="always"
+        android:visible="false"/>
+
+    <item android:id="@+id/action_logout"
+        android:title="@string/log_out"
+        android:icon="@drawable/navigation_logout_24"
+        app:showAsAction="withText"/>
+
+</menu>

@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/measurementBtn"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:text="Measurement"
+        app:iconGravity="textEnd"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:id="@+id/commentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rate_review_48px"
+        android:backgroundTint="@color/white"
+        android:layout_toEndOf="@+id/measurementBtn"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/plusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plus_sign"
+        android:textColor="@color/grayDarkBlue"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/measurementBtn"
+        android:visibility="gone"/>
+</RelativeLayout>

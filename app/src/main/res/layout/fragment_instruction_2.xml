@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instruction_title_2.1"
+        android:layout_margin="20dp"
+        android:textAlignment="textStart"
+        android:padding="10dp"
+        style="@style/Heading3"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/scan_button"
+        android:src="@drawable/menu_sensor_synced"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instruction_title_2.2"
+        android:layout_margin="20dp"
+        android:textAlignment="textStart"
+        android:padding="10dp"
+        style="@style/Heading3"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:contentDescription="@string/scan_button"
+        android:src="@drawable/no_cam"/>
+
+</LinearLayout>

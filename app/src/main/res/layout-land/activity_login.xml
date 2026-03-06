@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.llui.idrink.Activities.LoginActivity"
+    style="@style/AppThemeLand">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_to_idrink"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            style="@style/Heading1"/>
+        <ImageButton
+            android:id="@+id/helpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/title"
+            android:src="@drawable/help_24px"
+            android:contentDescription="@string/help"
+            android:backgroundTint="@color/zxing_transparent" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scan_or_manually_enter_your_patient"
+        android:layout_gravity="center"
+        style="@style/Heading3"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="200dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="26dp">
+
+        <com.journeyapps.barcodescanner.DecoratedBarcodeView
+            android:id="@+id/scanner_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="25dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputEditText"
+            android:id="@+id/boxPatientID"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:counterEnabled="true"
+            app:counterMaxLength="7"
+            android:layout_margin="20dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextPatientId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/patient_id"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputEditText"
+            android:id="@+id/boxCaseID"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:counterEnabled="true"
+            app:counterMaxLength="7"
+            android:layout_margin="20dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextCaseId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/case_id"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:text="@string/log_in"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

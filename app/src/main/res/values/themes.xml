@@ -1,0 +1,128 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.iDRINK" parent="Theme.Material3.Light">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/grayDarkBlue</item>
+        <item name="colorPrimaryVariant">@color/grayDarkBlue</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/turkish</item>
+        <item name="colorSecondaryVariant">@color/lightGreen</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/grayDarkBlue</item>
+        <!-- Set custom text appearance -->
+        <item name="textAppearanceHeadline1">@style/CustomTextAppearance</item>
+        <item name="textAppearanceHeadline2">@style/CustomTextAppearance</item>
+        <item name="textAppearanceHeadline3">@style/CustomTextAppearance</item>
+        <item name="textAppearanceHeadline4">@style/CustomTextAppearance</item>
+        <item name="textAppearanceHeadline5">@style/CustomTextAppearance</item>
+        <item name="textAppearanceHeadline6">@style/CustomTextAppearance</item>
+        <item name="textAppearanceSubtitle1">@style/CustomTextAppearance</item>
+        <item name="textAppearanceSubtitle2">@style/CustomTextAppearance</item>
+        <item name="textAppearanceBody1">@style/CustomTextAppearance</item>
+        <item name="textAppearanceBody2">@style/CustomTextAppearance</item>
+        <item name="textAppearanceCaption">@style/CustomTextAppearance</item>
+        <item name="textAppearanceButton">@style/CustomTextAppearance</item>
+        <item name="textAppearanceOverline">@style/CustomTextAppearance</item>
+        <item name="android:textViewStyle">@style/CustomTextAppearance</item>
+
+        <item name="materialButtonStyle">@style/CustomButtonStyle</item>
+        <item name="materialButtonOutlinedStyle">@style/CustomOutlinedButton</item>
+    </style>
+
+    <style name="Theme.iDRINK" parent="Base.Theme.iDRINK" /> <!-- Custom Text Appearance with custom font -->
+    <style name="CustomTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/signika_variable</item>
+        <item name="android:fontFamily">@font/signika_variable</item>
+    </style>
+
+
+    <style name="Heading">
+        <item name="android:textColor">@color/grayDarkBlue</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="Heading1" parent="Heading">
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="Heading2" parent="Heading">
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="Heading3" parent="Heading">
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="Heading4" parent="Heading">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="Heading5" parent="Heading">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TextBody">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="GrayText" parent="TextBody">
+        <item name="android:textColor">@color/lightGray</item>
+    </style>
+
+    <style name="FooterText" parent="GrayText">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppTheme" parent="Base.Theme.iDRINK">
+        <item name="android:paddingTop">80dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+    <style name="AppThemeLand" parent="Base.Theme.iDRINK">
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <style name="TextInputEditText" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">450dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="CustomButtonStyle" parent="Widget.Material3.Button.ElevatedButton">
+        <item name="backgroundTint">@color/button_state_colors</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">3dp</item>
+        <item name="iconTint">@color/white</item>
+        <item name="iconGravity">textEnd</item>
+    </style>
+    <style name="CustomLoadingButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:background">@drawable/animated_button_background</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="iconTint">@color/white</item>
+        <item name="iconGravity">textEnd</item>
+    </style>
+
+    <style name="CustomOutlinedButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="cornerRadius">10dp</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/outlined_button_state_stroke_color</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/outlined_button_state_stroke_color</item>
+    </style>
+
+    <style name="Scoreboard.Button" parent="@style/Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="cornerRadius">0dp</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textSize">32dp</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+    </style>
+</resources>

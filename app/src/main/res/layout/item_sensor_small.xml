@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/sync_icon"
+        android:layout_marginStart="10dp"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/sensor_logo"
+        android:src="@drawable/sync_24px"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/sensor_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/sensor_logo"
+        android:src="@drawable/sensor_logo_gray" />
+
+    <TextView
+        android:id="@+id/sensor_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/sensor_tag"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="11sp"
+        android:gravity="center"
+        />
+
+
+
+
+</LinearLayout>

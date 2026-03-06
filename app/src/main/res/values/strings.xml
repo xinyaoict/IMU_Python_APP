@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">iROM</string>
+    <string name="confirm">Confirm</string>
+    <string name="case_id">Case ID</string>
+    <string name="patient_id">Patient ID</string>
+    <string name="start_recording">Start Recording</string>
+    <string name="stop_recording">Stop Recording</string>
+    <string name="speed_header">Speed:</string>
+    <string name="fgv">FGV</string>
+    <string name="pgv">PGV</string>
+    <string name="sgv">SGV</string>
+    <string name="aids_header">Aids:</string>
+    <string name="historical_header">Historical:</string>
+    <string name="patient_info">PID: %1$s, FID: %2$s</string>
+    <string name="walk_description">Walk Happy Speed for 15 m</string>
+    <string name="measurement_1">Measurement 1</string>
+    <string name="measurement_2">Measurement 2</string>
+    <string name="measurement_3">Measurement 3</string>
+    <string name="send_data_btn">Send Data</string>
+    <string name="session_info">Fast</string>
+    <string name="cancel">Cancel</string>
+    <string name="are_you_sure_dialog">Are you sure?</string>
+    <string name="are_you_sure_info">Only %1$d/%2$d Measurements are taken. Are you sure to complete this session already?</string>
+    <string name="measurement_session_info">Measurement Session: %1$d</string>
+    <string name="start_new_recording">Start new recording</string>
+    <string name="no_history_note">No History</string>
+    <string name="pleaseSelectPatient">Please click on your patient.</string>
+    <string name="comment">Comment</string>
+    <string name="new_measurement">New Measurement</string>
+    <string name="back">Back</string>
+    <string name="onePersonOnVideo">Please ensure only one person is visible on the video.</string>
+    <string name="plus_sign">+</string>
+    <string name="select_how_many_imus_you_want_to_use">Select how many IMUs you want to use</string>
+    <string name="config_num_imus">Number of IMUs: %1$d</string>
+    <string name="drink_description">Drink normally from the cup</string>
+    <string name="scanned_devices">Scanned devices</string>
+    <string name="sensor_logo">sensor logo</string>
+    <string name="batt_state_charging">charging</string>
+    <string name="start_scanning">Start Scanning</string>
+    <string name="sync_connected_devices">Sync connected devices</string>
+    <string name="scan_button">scan button</string>
+    <string name="comment_button">comment button</string>
+    <string name="scan">Scan</string>
+    <string name="sync">Sync</string>
+    <string name="sync_button">sync button</string>
+    <string name="syncing">Syncing…</string>
+    <string name="scanning">Scanning…</string>
+    <string name="start_measurement_session">Start Measurement Session</string>
+    <string name="welcome_to_idrink">Welcome to iROM!</string>
+    <string name="scan_or_manually_enter_your_patient">Scan or manually enter your patient\'s information</string>
+    <string name="log_in">Log in</string>
+    <string name="click_to_scan_for_sensors">Click to scan for sensors nearby</string>
+    <string name="sync_completed">Sync completed</string>
+    <string name="click_to_connect">Click on the device to connect</string>
+    <string name="no_scanned_devices">No scanned devices</string>
+    <string name="name">Name</string>
+    <string name="orientation">Orientation</string>
+    <string name="free_acc">Free acc</string>
+    <string name="hide_dot_data">Hide Dot Device Data</string>
+    <string name="help">help button</string>
+    <string name="instruction_title">iROM Instructions</string>
+    <string name="OK">OK</string>
+    <string name="instruction_title_1.1"> 1. Once logged in, if needed, <b>click on the button \"Scan\"</b> to scan for sensors nearby.</string>
+    <string name="instruction_title_1.2"> <b>Click on the sensors</b> when they appear to connect them.</string>
+    <string name="instruction_title_1.3"> Once all needed sensors are connected <b>click on the button \"Sync * devices\"</b> to sync them.</string>
+    <string name="instruction_title_2.1"> 2. Once all needed sensors are synced <b>click on the button \"Start Measurement Session\"</b> to start the measurement session.</string>
+    <string name="instruction_title_2.2"> You can skip step 1 <b>if no sensors are used</b> or click on \"No Camera Recording\" to disable the camera.</string>
+    <string name="instruction_title_3.1"> 3. If sensors are connected they are displayed at the top of the screen.\n<b>Click on Measurement 1</b> to access the camera and sensors recording.</string>
+    <string name="instruction_title_3.2"> Each button represents one measurement. <b>3</b> is the recommended number of measurements per session.</string>
+    <string name="instruction_title_4.1"> 4. <b>When ready, click on start recording</b> and film the patient completing the drinking task.</string>
+    <string name="instruction_title_4.2"> <b>Click on stop recording</b> to end the recording.</string>
+
+    <string name="end_session">End Measurement Session</string>
+    <string name="idrink_instructions">iROM Instructions</string>
+    <string name="instruction_scanner1"><b>Click on the button \"Scan\"</b> to scan for sensors nearby</string>
+    <string name="scanner_instruct_last">Displayed are the <b>battery percentage</b>, the <b>tag</b> of the device and the <b>state</b> :\n green = connected, blue = connecting, gray = not connected.\nA sync icon appears at the top when the device is synced.
+        \nClick on the device if you want to disconnect it.</string>
+    <string name="wait_sync"><b>Wait</b> for all sensors to be synced. If syncing fails, try again.</string>
+    <string name="historical_instruction_1">The <b>Historical</b> displays all measurement session that have been completed since the patient\'s log in.</string>
+    <string name="historical_instruction_2">Displayed are the <b>number of sensors used</b>, the <b>number of measurement taken</b> and a possible <b>comment on the session</b>. </string>
+    <string name="historical_instruction_3"><b>Click on a session</b> to access, modify or preview its measurements.</string>
+    <string name="historical_instruction">historical instruction</string>
+    <string name="measurement_button_instruction_1">When a button is <b>gray</b> it is not yet enabled, start with measurement 1.</string>
+    <string name="measurement_button_instruction_2">The <b>yellow icon</b> means your measurement was <b>abnormally short</b>. You can either redo it or keep it as is.</string>
+    <string name="measurement_button_instruction_3">The <b>green icon</b> confirms that your measurement is of <b>appropriate length</b>.</string>
+    <string name="measurement_button_instruction_4">The <b>red icon</b> means that an <b>error</b> happened during the recording.</string>
+    <string name="measurement_button_instruction_5">When a measurement is completed you can <b>click on the comment button to comment it</b>.</string>
+    <string name="measurement_button_instruction_6"><b>3</b> is the standard number of measurements but, once reached, you can <b>add new measurements by clicking on the plus button</b>.</string>
+    <string name="log_out">Log out</string>
+    <string name="trial">Trial %1$d</string>
+    <string name="live_camera">Live Camera</string>
+    <string name="captured_video">Captured Video</string>
+    <string name="no_camera_recording">No Camera Recording</string>
+    <string name="camera_logo">Camera Logo</string>
+    <string name="sensor_only">Sensor-Only Mode</string>
+    <string name="hide_captured_video">Hide Captured Video</string>
+    <string name="live_camera_preview">Live Camera Preview</string>
+
+
+    <string-array name="aids_array">
+        <item>No Aid</item>
+        <item>FootDropDew (Left)</item>
+        <item>FootDropDew (Right)</item>
+        <item>FootDropDew (Both)</item>
+        <item>AFO (Left)</item>
+        <item>AFO (Right)</item>
+        <item>AFO (Both)</item>
+        <item>FES (Left)</item>
+        <item>FES (Right)</item>
+        <item>FES (Both)</item>
+    </string-array>
+</resources>

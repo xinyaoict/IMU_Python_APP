@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@android:color/transparent" />
+    <corners android:radius="10dp" />
+    <padding
+        android:left="50dp"
+        android:top="10dp"
+        android:right="50dp"
+        android:bottom="12dp" /> <!-- Adjust bottom padding for the shadow -->
+
+    <gradient
+        android:startColor="#33000000"
+        android:endColor="@android:color/transparent"
+        android:angle="270" />
+</shape>

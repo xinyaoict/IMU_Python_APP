@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grayDarkBlue">#1f3340</color>
+    <color name="darkTurkish">#4b808c</color>
+    <color name="lightBlue">#72acb6</color>
+    <color name="turkish">#89c9c8</color>
+    <color name="lightGreen">#d5ebe7</color>
+    <color name="darkGray">#575757</color>
+    <color name="lightGray">#bcbcbc</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#00FF00</color>
+    <color name="red">#FF0000</color>
+    <color name="forestGreen">#228B22</color>
+    <color name="gray">#D1D0CE</color>
+    <color name="disabledGray">#D9D9D9</color>
+    <color name="list_even">#FFF5F5</color>
+    <color name="list_odd">#F3FFFF</color>
+    <color name="list_selected">#455FB6</color>
+    <color name="stroke_border">#D7D7D7</color>
+
+
+</resources>
