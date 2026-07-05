@@ -98,9 +98,9 @@ Enable logging to capture detailed information for debugging purposes. Logs can 
 5. Create a new Pull Request.
 
 ## Demo
-Demo (QT): [https://drive.google.com/file/d/1SvFE6psN6G54zn26EITr49VTLA7Hl0QQ/view?usp=drive_lin k]
+Demo: https://drive.google.com/file/d/1SN4_8CM9yguPsZKimHdY4y6NGuGFZOY-
+/view?usp=drive_link
 
-Demo (Android): https://drive.google.com/file/d/1AkX61sOqXOJDKbCwg5dFvhJYl4WuMsoh/view?usp=drive_ link
 
 
 
