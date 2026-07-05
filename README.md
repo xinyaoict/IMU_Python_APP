@@ -99,10 +99,8 @@ Enable logging to capture detailed information for debugging purposes. Logs can 
 
 ## Demo
 Demo (QT): [https://drive.google.com/file/d/1SvFE6psN6G54zn26EITr49VTLA7Hl0QQ/view?usp=drive_lin k](https://drive.google.com/file/d/1SvFE6psN6G54zn26EITr49VTLA7Hl0QQ/view?usp=drive_lin k)
-<img width="468" height="25" alt="image" src="https://github.com/user-attachments/assets/082e1196-5f07-4c21-a92d-6c93be9edf69" />
 
 Demo (Android): https://drive.google.com/file/d/1AkX61sOqXOJDKbCwg5dFvhJYl4WuMsoh/view?usp=drive_ link
-<img width="468" height="97" alt="image" src="https://github.com/user-attachments/assets/79e71012-7d3f-4750-aa19-a42a1523a904" />
 
 
 
